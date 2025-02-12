@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Class Schedule</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff8dc;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      color: #5a3e2b;
+      margin-bottom: 20px;
+    }
+    
+    /* Default Table Layout */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px; /* Prevents extreme shrinking */
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      white-space: nowrap; /* Prevents text wrapping */
+    }
+    th {
+      background-color: #3b7a57;
+      color: white;
+      font-size: 1.2em;
+    }
+    td {
+      background-color: #c49a6c;
+      color: white;
+      font-size: 1em;
+    }
+    .time-column {
+      background-color: #5a3e2b;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        overflow-x: auto; /* Allows scrolling */
+      }
+      table {
+        font-size: 0.9em; /* Reduce font size */
+        min-width: 700px; /* Prevents table from breaking */
+      }
+      th, td {
+        padding: 8px; /* Adjust padding */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Class Schedule</h1>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-column">8:30 - 10:30 AM</td>
+            <td>---</td>
+            <td>BET5: Project Dev</td>
+            <td>---</td>
+            <td>BET5: Project Dev</td>
+            <td>Elective 2</td>
+          </tr>
+          <tr>
+            <td class="time-column">10:30 - 12:00 PM</td>
+            <td>---</td>
+            <td>CPET17: Embedded Sys Lec</td>
+            <td>---</td>
+            <td>CPET17: Embedded Sys Lec</td>
+            <td>---</td>
+          </tr>
+          <tr>
+            <td class="time-column">12:30 - 3:30 PM</td>
+            <td>---</td>
+            <td>BET5: Project Dev Lab</td>
+            <td>CPET17L: Embedded Sys Lab</td>
+            <td>BET5: Project Dev Lab</td>
+            <td>CPET17L: Embedded Sys Lab</td>
+          </tr>
+          <tr>
+            <td class="time-column">4:00 - 7:00 PM</td>
+            <td>---</td>
+            <td>Network Security Lab</td>
+            <td>---</td>
+            <td>Network Security Lab</td>
+            <td>---</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
